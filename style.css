@@ -308,3 +308,71 @@ body {
 .checkout-btn:hover {
   background: var(--accent-hover);
 }
+
+/* Mobile & Tablet Adaptation */
+@media (max-width: 768px) {
+  /* Navbar адаптациясы */
+  .navbar {
+    padding: 1rem 5%;
+  }
+
+  .nav-links {
+    display: none; /* Мобильдік нұсқада менюді жасыру */
+  }
+
+  /* Hero секциясы */
+  .hero {
+    padding: 0 5%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Тауарлар секциясы */
+  .products-section {
+    padding: 4rem 4%;
+  }
+
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  .product-img {
+    height: 160px;
+  }
+
+  .product-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .product-info .price {
+    font-size: 1rem;
+  }
+
+  /* Себет (Cart Sidebar) */
+  .cart-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+}
